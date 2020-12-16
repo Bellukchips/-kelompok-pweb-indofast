@@ -174,12 +174,12 @@ NAV
 .nav-link:hover {
   color: var(--first-color);
 }
-.nav-dropdown{
+.nav-dropdown {
   color: var(--black-color);
   font-weight: var(--font-semi);
   font-weight: bold;
 }
-.nav-dropdown:hover{
+.nav-dropdown:hover {
   color: var(--first-color);
 }
 .item-child {
@@ -220,15 +220,12 @@ css  class nav-item show dropdown with hover
   color: rgb(46, 206, 86);
 }
 
-#nav-item-user{
+#nav-item-user {
   display: block;
 }
 /*
 Close dropdown
 */
-
-
-
 
 .logo {
   font-weight: var(--font-bold);
@@ -255,7 +252,7 @@ Close dropdown
   font-size: 1.5rem;
   margin-right: var(--mb-2);
   cursor: pointer;
-  display:none;
+  display: none;
   position: relative;
 }
 /*
@@ -317,8 +314,6 @@ HOME
   background-color: var(--first-color-alt);
 }
 
-
-
 /*
 Overlay search
 */
@@ -331,8 +326,8 @@ Overlay search
   z-index: 1;
   top: var(--header-height);
   left: 0;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0, 0.9);
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 .overlay .closebtn {
   position: absolute;
@@ -354,7 +349,7 @@ Overlay search
   margin-top: 30px;
   margin: auto;
 }
-.overlay input[type=text] {
+.overlay input[type="text"] {
   padding: 15px;
   font-size: 17px;
   border: none;
@@ -370,16 +365,15 @@ Overlay search
   float: left;
   width: 20%;
   padding: 11px;
-  background:var(--first-color);
+  background: var(--first-color);
   font-size: 20px;
   border: none;
   cursor: pointer;
   outline-width: 0;
 }
-.overlay i{
+.overlay i {
   color: white;
 }
-
 
 /*
 Media Query Responsive
@@ -394,7 +388,7 @@ Media Query Responsive
   .container-home .button {
     margin-left: 35px;
   }
-  .logo{
+  .logo {
     font-size: var(--normal-font-size);
   }
 }
@@ -402,7 +396,7 @@ Media Query Responsive
   .home-img {
     top: 290px;
   }
-  .logo{
+  .logo {
     font-size: var(--medium-font-size);
   }
 }
@@ -474,19 +468,23 @@ Media Query Responsive
     width: 55%;
     top: 100px;
   }
-  .overlay .overlay-content{
-    width:50%;
+  .overlay .overlay-content {
+    width: 50%;
   }
   .item-child {
     position: absolute;
     left: 0;
     background-color: white;
   }
-  #nav-item-user{
+  #nav-item-user {
     display: none;
   }
-  .nav-user{
+  .nav-user {
     display: inline;
+  }
+  .prev,
+  .next {
+    top: 50%;
   }
 }
 
@@ -528,6 +526,7 @@ Media Query Responsive
     position: relative;
     margin: auto;
   }
+ 
 }
 /*
 CAROUSEL SLIDE SHOW
@@ -539,7 +538,7 @@ CAROUSEL SLIDE SHOW
 .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 40%;
   width: auto;
   padding: 16px;
   margin-top: -22px;
@@ -595,4 +594,3 @@ CAROUSEL SLIDE SHOW
     font-size: 11px;
   }
 }
-
