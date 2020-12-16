@@ -93,10 +93,10 @@ img {
 i {
   color: black;
 }
-/* .section {
+.section {
   padding: 3rem 0;
 }
-
+/* 
 .section-title {
   font-size: var(--h2-font-size);
   color: var(--first-color);
@@ -116,7 +116,7 @@ i {
 LAYOUT
 */
 .grid {
-  max-width: 1024px;
+  max-width: 100%;
   display: grid;
   grid-template-columns: 100%;
   grid-column-gap: 2rem;
@@ -233,6 +233,9 @@ Close dropdown
   font-size: var(--medium-font-size);
 }
 
+/*
+ICON
+*/
 .nav-cart {
   font-size: 1.5rem;
   margin-right: var(--mb-2);
@@ -254,6 +257,14 @@ Close dropdown
   cursor: pointer;
   display: none;
   position: relative;
+}
+.icon-add-cart{
+  font-size: 1rem;
+  color: white;
+}
+.icon-down{
+  font-size: 3rem;
+  color: var(--first-color);
 }
 /*
 show slide menu responsive
@@ -487,7 +498,6 @@ Media Query Responsive
     top: 50%;
   }
 }
-
 @media screen and (min-width: 900px) {
   .nav-link {
     font-size: var(--normal-font-size);
@@ -594,3 +604,114 @@ CAROUSEL SLIDE SHOW
     font-size: 11px;
   }
 }
+
+/*FOOTER*/
+footer{
+  height: 60px;
+  width: 100%;
+  position: relative;
+  background-color:var(--gray-color);
+}
+footer center p{
+  font-size: 15px;
+ text-decoration:none;
+ color: black;
+}
+
+
+/*
+CARD PRODUCT
+*/
+.btn {
+  color: #ffffff;
+  padding: 0.8rem;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards_item {
+  display: flex;
+  transition:0.5s;
+  padding:1rem;
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 100%;
+  }
+  
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+  }
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 100%;
+}
+.card_image img{
+  background-size: contain;
+  height: 20rem;
+  width: 100%;
+}
+.cards_item:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transition:0.5s;
+}
+.card_content {
+  padding: 1rem;
+  background:var(--first-color); 
+}
+.card_content:hover{
+  background: linear-gradient(to right, #0eda1f, rgb(46, 206, 86), #32be8f);
+}
+.card_title {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
+}
+
+.card_text {
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;    
+  font-weight: 400;
+}
+
+.title-page{
+  text-align: center;
+}
+
