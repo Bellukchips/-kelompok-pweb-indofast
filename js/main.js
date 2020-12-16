@@ -11,6 +11,7 @@ const showMenu = (toggleId,navId)=>{
 }
 
 showMenu('toggle','navmenu');
+showMenu('searchToggle','searchMenu');
 
 // remove menu responsive
 
@@ -26,6 +27,8 @@ function linkAction(){
 }
 navLink.forEach(n=> n.addEventListener('click',linkAction));
 
+
+// SLIDESHOW
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -46,4 +49,25 @@ function showSlides(n) {
       slides[i].style.display = "none";  
   }
   slides[slideIndex-1].style.display = "block";  
+}
+
+
+//SHOW AND CLOSE SEARCH OVERLAY
+function openSearch() {
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function closeSearch() {
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+
+// VALIDASI SEARCH
+function search() {
+  var x = document.forms["formSearch"]["searchText"].value;
+  if (x == "") {
+      alert("Search failed, because search must be filled out");
+      return false;
+  }
+
 }
