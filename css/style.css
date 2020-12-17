@@ -170,6 +170,7 @@ NAV
   color: var(--black-color);
   font-weight: var(--font-semi);
   font-weight: bold;
+
 }
 .nav-link:hover {
   color: var(--first-color);
@@ -319,7 +320,7 @@ HOME
   font-size: var(--small-font-size);
   font-weight: var(--font-semi);
   transition: 0.3s;
-  border-radius: 3px;
+  border-radius: 10px;
 }
 .button:hover {
   background-color: var(--first-color-alt);
@@ -627,13 +628,14 @@ CARD PRODUCT
   padding: 0.8rem;
   font-size: 14px;
   text-transform: uppercase;
-  border-radius: 4px;
+  border-radius: 15px;
   font-weight: 400;
   display: block;
   width: 100%;
   cursor: pointer;
   border: 1px solid rgba(255, 255, 255, 0.2);
   background: transparent;
+
 }
 
 .btn:hover {
@@ -680,6 +682,8 @@ CARD PRODUCT
   background-size: contain;
   height: 20rem;
   width: 100%;
+  border-radius: 20px;
+  
 }
 .cards_item:hover{
   cursor: pointer;
@@ -690,6 +694,7 @@ CARD PRODUCT
 .card_content {
   padding: 1rem;
   background:var(--first-color); 
+  border-radius: 10px;
 }
 .card_content:hover{
   background: linear-gradient(to right, #0eda1f, rgb(46, 206, 86), #32be8f);
