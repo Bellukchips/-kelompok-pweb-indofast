@@ -258,11 +258,11 @@ ICON
   display: none;
   position: relative;
 }
-.icon-add-cart{
+.icon-add-cart {
   font-size: 1rem;
   color: white;
 }
-.icon-down{
+.icon-down {
   font-size: 3rem;
   color: var(--first-color);
 }
@@ -309,7 +309,7 @@ HOME
   top: 350px;
   width: 100%;
 }
-.product-sale{
+.product-sale {
   background-color: var(--gray-color);
 }
 /*BUTTON BUY NOW*/
@@ -404,11 +404,16 @@ Media Query Responsive
   .logo {
     font-size: var(--normal-font-size);
   }
-  .cards_item:hover{
+  .cards_item:hover {
     cursor: pointer;
     transform: none;
     -webkit-transform: none;
-    transition:0.5s;
+    transition: 0.5s;
+  }
+  .card_image img {
+    background-size: cover;
+    height: 20rem;
+    width: 100%;
   }
 }
 @media screen and (min-width: 370px) {
@@ -505,11 +510,16 @@ Media Query Responsive
   .next {
     top: 50%;
   }
-  .cards_item:hover{
+  .cards_item:hover {
     cursor: pointer;
     transform: scale(1.1);
     -webkit-transform: scale(1.1);
-    transition:0.5s;
+    transition: 0.5s;
+  }
+  .slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
   }
 }
 @media screen and (min-width: 900px) {
@@ -521,6 +531,11 @@ Media Query Responsive
   }
   .logo {
     font-size: var(--medium-font-size);
+  }
+  .card_image img {
+    background-size: cover;
+    width: 100%;
+    height: auto;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -545,12 +560,6 @@ Media Query Responsive
   .home-title {
     font-size: 5rem;
   }
-  .slideshow-container {
-    max-width: 100%;
-    position: relative;
-    margin: auto;
-  }
- 
 }
 /*
 CAROUSEL SLIDE SHOW
@@ -620,18 +629,17 @@ CAROUSEL SLIDE SHOW
 }
 
 /*FOOTER*/
-footer{
+footer {
   height: 60px;
   width: 100%;
   position: relative;
-  background-color:var(--gray-color);
+  background-color: var(--gray-color);
 }
-footer center p{
+footer center p {
   font-size: 15px;
- text-decoration:none;
- color: black;
+  text-decoration: none;
+  color: black;
 }
-
 
 /*
 CARD PRODUCT
@@ -645,6 +653,7 @@ CARD PRODUCT
   font-weight: 400;
   display: block;
   width: 100%;
+  outline-width: 0;
   cursor: pointer;
   border: 1px solid rgba(255, 255, 255, 0.2);
   background: transparent;
@@ -664,15 +673,18 @@ CARD PRODUCT
 
 .cards_item {
   display: flex;
-  transition:0.5s;
-  padding:1rem;
+  transition: 0.5s;
+  padding: 1rem;
+  height: 500px;
 }
 
-@media (min-width: 40rem) {
+@media (min-width: 30rem) {
   .cards_item {
-    width: 100%;
+    width: 50%;
   }
-  
+  .cards_item {
+    height: auto;
+  }
 }
 
 @media (min-width: 56rem) {
@@ -682,7 +694,7 @@ CARD PRODUCT
 }
 
 .card {
-  background-color: white;
+  background: var(--first-color);
   border-radius: 0.25rem;
   box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
   display: flex;
@@ -690,16 +702,14 @@ CARD PRODUCT
   overflow: hidden;
   width: 100%;
 }
-.card_image img{
-  background-size: contain;
-  height: 20rem;
+.card_image img {
+  background-size: cover;
   width: 100%;
 }
 .card_content {
   padding: 1rem;
-  background:var(--first-color); 
 }
-.card_content:hover{
+.card_content:hover {
   background: linear-gradient(to right, #0eda1f, rgb(46, 206, 86), #32be8f);
 }
 .card_title {
@@ -715,11 +725,10 @@ CARD PRODUCT
   color: #ffffff;
   font-size: 0.875rem;
   line-height: 1.5;
-  margin-bottom: 1.25rem;    
+  margin-bottom: 1.25rem;
   font-weight: 400;
 }
 
-.title-page{
+.title-page {
   text-align: center;
 }
-
