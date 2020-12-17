@@ -310,7 +310,9 @@ HOME
   top: 350px;
   width: 100%;
 }
-
+.product-sale{
+  background-color: var(--gray-color);
+}
 /*BUTTON BUY NOW*/
 .button {
   display: inline-block;
@@ -402,6 +404,12 @@ Media Query Responsive
   }
   .logo {
     font-size: var(--normal-font-size);
+  }
+  .cards_item:hover{
+    cursor: pointer;
+    transform: none;
+    -webkit-transform: none;
+    transition:0.5s;
   }
 }
 @media screen and (min-width: 370px) {
@@ -497,6 +505,12 @@ Media Query Responsive
   .prev,
   .next {
     top: 50%;
+  }
+  .cards_item:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transition:0.5s;
   }
 }
 @media screen and (min-width: 900px) {
@@ -684,12 +698,6 @@ CARD PRODUCT
   width: 100%;
   border-radius: 20px;
   
-}
-.cards_item:hover{
-  cursor: pointer;
-  transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  transition:0.5s;
 }
 .card_content {
   padding: 1rem;
