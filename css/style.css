@@ -38,6 +38,7 @@ variable css
     --h2-font-size: 1.5rem;
     --normal-font-size: 1rem;
     --small-font-size: 0.813rem;
+    --very-small-font-size:12px;
   }
 }
 
@@ -459,8 +460,9 @@ Media Query Responsive
 @media screen and (min-width: 699px) {
   .home-img {
     top: 130px;
-    left: 32%;
+    left: 30%;
   }
+  
 }
 @media screen and (min-width: 769px) {
   .logo {
@@ -480,10 +482,10 @@ Media Query Responsive
     margin-bottom: 0;
   }
   .nav-link {
-    font-size: var(--small-font-size);
+    font-size: var(--very-small-font-size);
   }
   .nav-dropdown {
-    font-size: var(--small-font-size);
+    font-size: var(--very-small-font-size);
   }
   .home-title {
     font-size: var(--medium-font-size);
@@ -499,6 +501,7 @@ Media Query Responsive
   .item-child {
     position: absolute;
     left: 0;
+    top: 38px;
     background-color: white;
   }
   #nav-item-user {
@@ -525,10 +528,10 @@ Media Query Responsive
 }
 @media screen and (min-width: 900px) {
   .nav-link {
-    font-size: var(--normal-font-size);
+    font-size: var(--small-font-size);
   }
   .nav-dropdown {
-    font-size: var(--normal-font-size);
+    font-size: var(--small-font-size);
   }
   .logo {
     font-size: var(--medium-font-size);
@@ -560,6 +563,15 @@ Media Query Responsive
   }
   .home-title {
     font-size: 5rem;
+  }
+  .nav-link {
+    font-size: var(--normal-font-size);
+  }
+  .nav-dropdown {
+    font-size: var(--normal-font-size);
+  }
+  .item-child{
+    top: 25px;
   }
 }
 /*
