@@ -18,8 +18,8 @@ showMenu('searchToggle','searchMenu');
 const navLink = document.querySelectorAll('.nav-link');
 function linkAction(){
     // Active Link
-    navLink.forEach(n => n.classList.remove('active'));
-    this.classList.add('active');
+    // navLink.forEach(n => n.classList.remove('active'));
+    // this.classList.add('active');
 
     //remove menu responsive
     const navMenu = document.getElementById('navmenu');

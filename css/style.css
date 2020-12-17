@@ -38,7 +38,7 @@ variable css
     --h2-font-size: 1.5rem;
     --normal-font-size: 1rem;
     --small-font-size: 0.813rem;
-    --very-small-font-size:12px;
+    --very-small-font-size: 12px;
   }
 }
 
@@ -171,7 +171,6 @@ NAV
   color: var(--black-color);
   font-weight: var(--font-semi);
   font-weight: bold;
-
 }
 .nav-link:hover {
   color: var(--first-color);
@@ -285,6 +284,7 @@ HOME
 */
 
 .home {
+  padding-top: 5rem;
   background-color: var(--gray-color);
 }
 .container-home {
@@ -420,7 +420,7 @@ Media Query Responsive
 }
 @media screen and (min-width: 370px) {
   .home-img {
-    top: 290px;
+    top: 300px;
   }
   .logo {
     font-size: var(--medium-font-size);
@@ -428,7 +428,7 @@ Media Query Responsive
 }
 @media screen and (min-width: 378px) {
   .home-img {
-    top: 280px;
+    top: 350px;
     left: 35%;
     width: 60%;
   }
@@ -438,7 +438,7 @@ Media Query Responsive
 }
 @media screen and (min-width: 406px) {
   .home-img {
-    top: 240px;
+    top: 350px;
     left: 30%;
     width: 70%;
   }
@@ -449,20 +449,19 @@ Media Query Responsive
 
 @media screen and (min-width: 428px) {
   .home-img {
-    top: 220px;
+    top: 300px;
   }
 }
 @media screen and (min-width: 491px) {
   .home-img {
-    top: 200px;
+    top: 300px;
   }
 }
 @media screen and (min-width: 699px) {
   .home-img {
-    top: 130px;
+    top: 200px;
     left: 30%;
   }
-  
 }
 @media screen and (min-width: 769px) {
   .logo {
@@ -525,6 +524,17 @@ Media Query Responsive
     position: relative;
     margin: auto;
   }
+  .home-img {
+    top: 50px;
+    left: 50%;
+    width: 50%;
+  }
+}
+@media screen and (min-width: 800px) {
+  .home-img {
+    top: 10px;
+    left: 50%;
+  }
 }
 @media screen and (min-width: 900px) {
   .nav-link {
@@ -541,6 +551,10 @@ Media Query Responsive
     width: 100%;
     height: auto;
   }
+
+  .home {
+    padding-top: 10rem;
+  }
 }
 @media screen and (min-width: 1024px) {
   .grid {
@@ -550,7 +564,7 @@ Media Query Responsive
   .home-img {
     top: 130px;
     left: 30%;
-    width: 70%;
+    width: 60%;
   }
   .l-header {
     height: 100px;
@@ -570,8 +584,13 @@ Media Query Responsive
   .nav-dropdown {
     font-size: var(--normal-font-size);
   }
-  .item-child{
+  .item-child {
     top: 25px;
+  }
+  .home-img {
+    width: 50%;
+    left: 40%;
+    top: 170px;
   }
 }
 /*
@@ -670,7 +689,6 @@ CARD PRODUCT
   cursor: pointer;
   border: 1px solid rgba(255, 255, 255, 0.2);
   background: transparent;
-
 }
 
 .btn:hover {
@@ -720,12 +738,10 @@ CARD PRODUCT
 .card_image img {
   background-size: cover;
   width: 100%;
-  
 }
 .card_content {
   padding: 1rem;
-  background:var(--first-color); 
-
+  background: var(--first-color);
 }
 .card_content:hover {
   background: linear-gradient(to right, #0eda1f, rgb(46, 206, 86), #32be8f);
