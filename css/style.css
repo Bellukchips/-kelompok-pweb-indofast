@@ -284,11 +284,9 @@ HOME
 */
 
 .home {
+  height:100vh;
   padding-top: 5rem;
   background-color: var(--gray-color);
-}
-.container-home {
-  height:100vh;
 }
 .home-content {
   padding: 2rem;
@@ -420,7 +418,7 @@ Media Query Responsive
 }
 @media screen and (min-width: 370px) {
   .home-img {
-    top: 300px;
+    top: 350px;
   }
   .logo {
     font-size: var(--medium-font-size);
