@@ -288,7 +288,7 @@ HOME
   background-color: var(--gray-color);
 }
 .container-home {
-  height: calc(100vh - var(--header-height));
+  height:100vh;
 }
 .home-content {
   padding: 2rem;
@@ -396,7 +396,7 @@ Media Query Responsive
 */
 @media screen and (min-width: 335px) {
   .home-img {
-    top: 330px;
+    top: 380px;
     left: 35%;
     width: 60%;
   }
@@ -550,10 +550,6 @@ Media Query Responsive
     background-size: cover;
     width: 100%;
     height: auto;
-  }
-
-  .home {
-    padding-top: 10rem;
   }
 }
 @media screen and (min-width: 1024px) {
