@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,10 @@
     <link rel="stylesheet" href="../../css/style.css">
     <title>Detail Page</title>
 </head>
+
 <body>
-      <!--SEARCH OVERLAY-->
-      <div id="myOverlay" class="overlay">
+    <!--SEARCH OVERLAY-->
+    <div id="myOverlay" class="overlay">
         <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
         <div class="overlay-content">
             <form action="" name="formSearch" onsubmit="return search()" method="post">
@@ -28,7 +30,7 @@
                 <div class="nav-list">
 
                     <div class="nav-item">
-                        <a href="accesories.html" class="nav-link">Accessories</a>
+                        <a href="../accesories.html" class="nav-link">Accessories</a>
                     </div>
                     <div class="nav-item">
                         <a class="nav-dropdown">
@@ -79,8 +81,8 @@
             <div>
                 <i class='bx bxs-user nav-user'>
                     <div class="item-child">
-                        <a href="login.html" class="nav-link">Login</a>
-                        <a href="register.html" class="nav-link">Register</a>
+                        <a href="../login.html" class="nav-link">Login</a>
+                        <a href="../register.html" class="nav-link">Register</a>
                     </div>
                 </i>
                 <i class='bx bxs-cart nav-cart'></i>
@@ -92,25 +94,122 @@
     </header>
     <main class="l-main">
         <section class="detail">
-            <div class="detail-page">
+            <div class="product-detail">
                 <div class="img-detail">
-                    <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="">
+                    <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                        alt="">
                 </div>
-                <div class="detail-product">
-                    <div class="title-detail-product">
-                       <h1> Nike Black Original</h1>
-                    </div>
+                <div class="data-product">
+                    <h1>Nike Airmax 270 Premium</h1>
+                    <div class="price-product">Rp.255.000</div>
+                    <br>
+                    <hr>
                     <div class="size-product">
+                        Size Product :
                         <ul>
-                            <li><h3>34</h3></li>
-                            <li><h3>35</h3></li>
-                            <li><h3>36</h3></li>
+                            <li><a href="#" class="btn-size">31</a></li>
+                            <li><a href="#" class="btn-size">32</a></li>
+                            <li><a href="#" class="btn-size">33</a></li>
+                            <li><a href="#" class="btn-size">34</a></li>
                         </ul>
                     </div>
+                    <div class="desc-product">
+                        <h3>Description</h3>
+                        <p>Deskripsi Nike Airmax 270 Premium Original Triple black Sepatu Pria - Hitam, 38
+                            Transaksi Aman, Mudah & Terpercaya via IndoFast
+
+                            termasuk DUS/BOX. BOX
+
+                            Ukuran 39-44
+                            Nyaman dipakai untuk segala jenis Olahraga, jalan-jalan, trevelling dan melakukan berbagai
+                            macam aktifitas sehari-hari.
+
+                            Tanyakan stock sebelum memesan, supaya menghindari refund karna stock sewaktu-waktu habis.
+
+                            Pastikan mencantumkan warna dan ukuran saat membeli atau cantumkan nomor sesuai
+                            gambar,supaya mempercepat prodses pengiriman barang.</p>
+                    </div>
+                    <br>
+                    <hr>
+
                 </div>
+
             </div>
+
+            <div class="recomended-title">Product Recomended</div>
+            <ul class="cards">
+
+
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_image"><img src="../../src/shoes-nikeAirMax-pink.jpg"></div>
+                        <div class="card_content">
+                            <h2 class="card_title">Nike Air Max </h2>
+                            <p class="card_text"><span style="text-decoration: line-through white;">Rp.1.500.000</span>
+                                Rp.256.000</p>
+                            <button class="btn card_btn">Add To Cart <i
+                                    class='bx bxs-cart-add icon-add-cart'></i></button>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_image"><img src="../../src/creative-headline-APNnyM36puU-unsplash.jpg"></div>
+                        <div class="card_content">
+                            <h2 class="card_title">Tas Wanita</h2>
+                            <p class="card_text"><span style="text-decoration: line-through white;">Rp.2.000.000</span>
+                                Rp.950.000</p>
+                            <button class="btn card_btn">Add To Cart <i
+                                    class='bx bxs-cart-add icon-add-cart'></i></button>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_image"><img src="../../src/watch-appleWatch.jpg"></div>
+                        <div class="card_content">
+                            <h2 class="card_title">Apple Watch Series 5</h2>
+                            <p class="card_text"><span style="text-decoration: line-through white;">Rp7.699.000</span>
+                                Rp.5.550.000</p>
+                            <button class="btn card_btn">Add To Cart <i
+                                    class='bx bxs-cart-add icon-add-cart'></i></button>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_image"><img src="../../src/shoes-airJordan-grey.jpg"></div>
+                        <div class="card_content">
+                            <h2 class="card_title">Air Jordan High Grey</h2>
+                            <p class="card_text"><span style="text-decoration: line-through white;">Rp10.200.000</span>
+                                Rp.1.935.149</p>
+                            <button class="btn card_btn">Add To Cart <i
+                                    class='bx bxs-cart-add icon-add-cart'></i></button>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="cards_item">
+                    <div class="card">
+                        <div class="card_image"><img src="../../src/shirt-tshirt.jpg"></div>
+                        <div class="card_content">
+                            <h2 class="card_title">Kasual Pria Lengan Pendek</h2>
+                            <p class="card_text"><span style="text-decoration: line-through white;">Rp136.399</span>
+                                Rp.99.000</p>
+                            <button class="btn card_btn">Add To Cart <i
+                                    class='bx bxs-cart-add icon-add-cart'></i></button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </section>
     </main>
-    <script src="../../js/main.js"></script>
+
+    <!--BOTTOM MENU-->
+
 </body>
+
 </html>

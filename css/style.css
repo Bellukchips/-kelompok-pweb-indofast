@@ -480,7 +480,7 @@ PAGE components
 .img-product img {
   background-size: auto;
   border-radius: 10px;
-  height: 250px;
+  height: 240px;
   width: 100%;
  
 }
@@ -510,19 +510,64 @@ PAGE components
 .view-product:hover {
   background-color: rgba(82, 181, 107, 0.713);
 }
-
-.detail-product{
-  padding-left: 2rem;
-  padding-top: 2rem;
-  padding-right: 2rem;
+hr{
+  border-top: 1px solid rgb(235, 235, 235);
 }
-.detail-product ul{
-  display:flex;;
+.detail{
+  line-height: 1;
 }
-.detail-product ul li{
+.img-detail img{
+  height: auto;
+  width: 100%;
+}
+.data-product{
+  padding: 2rem;
+}
+.price-product{
+  padding-top: 20px;
+  font-size: 1rem;
+}
+.data-product h1{
+  color: var(--first-color);
+}
+.desc-product{
+  color: var(--first-color);
+  margin-top: 30px;
+}
+.desc-product p{
+  color: gray;
+  font-size:12px;
+  text-align: start;
+  line-height: 2;
+  letter-spacing: 3px;
+}
+.size-product{
+  color: var(--first-color);
+  margin-top: 30px;
+}
+.size-product ul {
+  display:flex;
+  margin-top: 30px;
+}
+.size-product ul li a{
   margin-left: 5px;
 }
-
+.btn-size{
+  height: 30px;
+  width:80px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgba(235, 235, 235, 0.734);
+  color: black;
+}
+.btn-size:hover{
+  background-color: rgba(235, 235, 235, 0.501);
+}
+.recomended-title{
+  font-size: 1rem;
+  color: gray;
+  text-align: center;
+}
 /*
 CARD PRODUCT
 */
@@ -826,6 +871,26 @@ Media Query Responsive
   .custom-select {
     font-size: 12px;
   }
+  .detail{
+    top: var(--header-height);
+    padding: 5rem;
+  }
+  .product-detail{
+    display:flex;
+    position: relative;
+  }
+  .img-detail{
+    width:300%;
+  }
+  .data-product{
+    margin-left: 20px;
+  }
+  .recomended-title{
+    padding:2rem;
+    color: gray;
+    font-size: 2rem;
+    text-align: center;
+  }
 }
 @media screen and (min-width: 800px) {
   .home-img {
@@ -924,6 +989,12 @@ Media Query Responsive
   }
 }
 
+@media screen and (min-width:1366px){
+  .list-product {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
+}
 /*
 CAROUSEL SLIDE SHOW
 */
