@@ -470,18 +470,18 @@ PAGE components
 .card-product {
   transition: 0.5s;
   width: 100%;
-  height: 270px;
+  height: auto;
   background-color: var(--first-color);
   border-radius: 10px;
   margin: 10px 0px;
 }
 
-.img-product {
-  max-width: 100%;
-  background-size: cover;
-}
 .img-product img {
+  background-size: auto;
   border-radius: 10px;
+  height: 200px;
+  width: 100%;
+ 
 }
 .product-data {
   padding: 1rem;
@@ -665,9 +665,6 @@ Media Query Responsive
   .container-home .button {
     margin-left: 35px;
   }
-  .card-product {
-    height: 290px;
-  }
 }
 @media screen and (min-width: 406px) {
   .home-img {
@@ -712,9 +709,6 @@ Media Query Responsive
     width: 33%;
     height: auto;
   }
-  .card-product {
-    height: 280px;
-  }
   .list-product {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -728,10 +722,6 @@ Media Query Responsive
 @media screen and (min-width: 699px) {
   .home-img {
     top: 200px;
-  }
-  .card-product {
-    height: 300px;
-    width: 100%;
   }
 }
 @media screen and (min-width: 769px) {
@@ -829,9 +819,7 @@ Media Query Responsive
     top: 10px;
     left: 50%;
   }
-  .card-product {
-    height: 300px;
-  }
+
 }
 @media screen and (min-width: 900px) {
   .nav-link {
@@ -868,10 +856,7 @@ Media Query Responsive
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
   }
-  .card-product {
-    height: 290px;
-    width: 100%;
-  }
+
 }
 @media screen and (min-width: 1024px) {
   .grid {
@@ -923,9 +908,6 @@ Media Query Responsive
   .section-product > div:last-child {
     padding-left: 50px;
     width: 90%;
-  }
-  .card-product {
-    height: 320px;
   }
 }
 
