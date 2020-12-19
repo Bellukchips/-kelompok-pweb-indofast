@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>IndoFast | Men's Clothes</title>
+</head>
+<body>
+     <!--SEARCH OVERLAY-->
+     <div id="myOverlay" class="overlay">
+        <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+        <div class="overlay-content">
+            <form action="" name="formSearch" onsubmit="return search()" method="post">
+                <input type="text" placeholder="Search product.." name="searchText">
+                <button type="submit"><i class='bx bx-search nav-search'></i></button>
+            </form>
+        </div>
+    </div>
+    <header class="l-header">
+        <!--MENU DROPDOWN-->
+        <nav class="nav grid">
+            <div>
+                <a href="../index.html" class="logo">IndoFast</a>
+            </div>
+            <div class="nav-menu" id="navmenu">
+                <div class="nav-list">
+
+                    <div class="nav-item">
+                        <a href="accesories.html" class="nav-link">Accessories</a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-dropdown">
+                            Shoes
+                            <i class='bx bx-caret-down'></i>
+                        </a>
+                        <div class="item-child">
+                            <a href="shoes-men.html" class="nav-link">Men</a>
+                            <a href="women-shoes.html" class="nav-link">Women</a>
+                        </div>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-dropdown">
+                            Clothes
+                            <i class='bx bx-caret-down'></i>
+                        </a>
+                        <div class="item-child">
+                            <a href="men-clothes.html" class="nav-link">Men</a>
+                            <a href="women-clothes.html" class="nav-link">Women</a>
+                        </div>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-dropdown">
+                            Bag
+                            <i class='bx bx-caret-down'></i>
+                        </a>
+                        <div class="item-child">
+                            <a href="men-bag.html" class="nav-link">Men</a>
+                            <a href="women-bag.html" class="nav-link">Women</a>
+                        </div>
+                    </div>
+                    <div class="nav-item">
+                        <a href="wrist-watch.html" class="nav-link">Wrist Watch</a>
+                    </div>
+                    <div class="nav-item" id="nav-item-user">
+                        <a class="nav-dropdown">
+                            Account
+                            <i class='bx bx-caret-down'></i>
+                        </a>
+                        <div class="item-child">
+                            <a href="login.html" class="nav-link">Login</a>
+                            <a href="register.html" class="nav-link">Register</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div>
+                <i class='bx bxs-user nav-user'>
+                    <div class="item-child">
+                        <a href="login.html" class="nav-link">Login</a>
+                        <a href="register.html" class="nav-link">Register</a>
+                    </div>
+                </i>
+                <i class='bx bxs-cart nav-cart'></i>
+                <i class='bx bx-search nav-search' onclick="openSearch()"></i>
+                <i class='bx bx-menu nav-toggle' id="toggle"></i>
+
+            </div>
+        </nav>
+    </header>
+    <main class="l-main">
+
+           <section class="title-section section">
+            <a href="#men-clothes">Men's Clothes</a>
+           </section>
+           
+           <!--PRODUCT SALE-->
+           <section id="men-clothes" class="section-product">
+               <div class="sidebar">
+                <div class="sidebar-item">
+                    <h3>Filter Price</h3>
+                    <form method="POST">
+                        <input type="number" placeholder="Filter Price ex:12000" name="filterPrice" class="filter-price">
+                    </form>
+                </div>
+               </div>
+               <div class="content-product">
+
+                    <div class="header-content-product">
+                        <h1>Men's Clothes</h1>
+                        <select name="sortBy" id="" class="custom-select">
+                            <option value="0">Sort By</option>
+                            <option value="name">Name A - Z</option>
+                            <option value="bestSell">Best Selling</option>
+                            <option value="LtoH">Price Low to High</option>
+                            <option value="HtoL">Price High to Low</option>
+                        </select>
+                    </div>
+
+                    <div class="list-product">
+                        <!--PRODUCT SALE CARD-->
+                            <div class="card-product">
+                                <div class="img-product">
+                                    <img src="../src/shoes-airJordan-blue.jpg" alt="">
+                                </div>
+                                <div class="product-data">
+                                    <div class="title-product"><h1>Nike Air Jordan Blue</h1></div>
+                                    <div class="product-price">Rp.15.000.000</div>
+                                    <div class="view-product">
+                                        <a href="">View Detail</a>
+                                    </div>
+                                </div>
+                            </div> 
+
+                            <div class="card-product">
+                                <div class="img-product">
+                                    <img src="../src/shoes-airJordan-blue.jpg" alt="">
+                                </div>
+                                <div class="product-data">
+                                    <div class="title-product"><h1>Nike Air Jordan Blue</h1></div>
+                                    <div class="product-price">Rp.15.000.000</div>
+                                    <div class="view-product">
+                                        <a href="">View Detail</a>
+                                    </div>
+                                </div>
+                            </div> 
+
+                            <div class="card-product">
+                                <div class="img-product">
+                                    <img src="../src/shoes-airJordan-blue.jpg" alt="">
+                                </div>
+                                <div class="product-data">
+                                    <div class="title-product"><h1>Nike Air Jordan Blue</h1></div>
+                                    <div class="product-price">Rp.15.000.000</div>
+                                    <div class="view-product">
+                                        <a href="">View Detail</a>
+                                    </div>
+                                </div>
+                            </div> 
+
+                            <div class="card-product">
+                                <div class="img-product">
+                                    <img src="../src/shoes-airJordan-blue.jpg" alt="">
+                                </div>
+                                <div class="product-data">
+                                    <div class="title-product"><h1>Nike Air Jordan Blue</h1></div>
+                                    <div class="product-price">Rp.15.000.000</div>
+                                    <div class="view-product">
+                                        <a href="">View Detail</a>
+                                    </div>
+                                </div>
+                            </div> 
+
+                            <div class="card-product">
+                                <div class="img-product">
+                                    <img src="../src/shoes-airJordan-blue.jpg" alt="">
+                                </div>
+                                <div class="product-data">
+                                    <div class="title-product"><h1>Nike Air Jordan Blue</h1></div>
+                                    <div class="product-price">Rp.15.000.000</div>
+                                    <div class="view-product">
+                                        <a href="">View Detail</a>
+                                    </div>
+                                </div>
+                            </div> 
+
+                            <div class="card-product">
+                                <div class="img-product">
+                                    <img src="../src/shoes-airJordan-blue.jpg" alt="">
+                                </div>
+                                <div class="product-data">
+                                    <div class="title-product"><h1>Nike Air Jordan Blue</h1></div>
+                                    <div class="product-price">Rp.15.000.000</div>
+                                    <div class="view-product">
+                                        <a href="">View Detail</a>
+                                    </div>
+                                </div>
+                            </div> 
+
+                            <div class="card-product">
+                                <div class="img-product">
+                                    <img src="../src/shoes-airJordan-blue.jpg" alt="">
+                                </div>
+                                <div class="product-data">
+                                    <div class="title-product"><h1>Nike Air Jordan Blue</h1></div>
+                                    <div class="product-price">Rp.15.000.000</div>
+                                    <div class="view-product">
+                                        <a href="">View Detail</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-product">
+                                <div class="img-product">
+                                    <img src="../src/shoes-airJordan-blue.jpg" alt="">
+                                </div>
+                                <div class="product-data">
+                                    <div class="title-product"><h1>Nike Air Jordan Blue</h1></div>
+                                    <div class="product-price">Rp.15.000.000</div>
+                                    <div class="view-product">
+                                        <a href="">View Detail</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-product">
+                                <div class="img-product">
+                                    <img src="../src/shoes-airJordan-blue.jpg" alt="">
+                                </div>
+                                <div class="product-data">
+                                    <div class="title-product"><h1>Nike Air Jordan Blue</h1></div>
+                                    <div class="product-price">Rp.15.000.000</div>
+                                    <div class="view-product">
+                                        <a href="">View Detail</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-product">
+                                <div class="img-product">
+                                    <img src="../src/shoes-airJordan-blue.jpg" alt="">
+                                </div>
+                                <div class="product-data">
+                                    <div class="title-product"><h1>Nike Air Jordan Blue</h1></div>
+                                    <div class="product-price">Rp.15.000.000</div>
+                                    <div class="view-product">
+                                        <a href="">View Detail</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-product">
+                                <div class="img-product">
+                                    <img src="../src/shoes-airJordan-blue.jpg" alt="">
+                                </div>
+                                <div class="product-data">
+                                    <div class="title-product"><h1>Nike Air Jordan Blue</h1></div>
+                                    <div class="product-price">Rp.15.000.000</div>
+                                    <div class="view-product">
+                                        <a href="">View Detail</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-product">
+                                <div class="img-product">
+                                    <img src="../src/shoes-airJordan-blue.jpg" alt="">
+                                </div>
+                                <div class="product-data">
+                                    <div class="title-product"><h1>Nike Air Jordan Blue</h1></div>
+                                    <div class="product-price">Rp.15.000.000</div>
+                                    <div class="view-product">
+                                        <a href="">View Detail</a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+               </div>
+           </section>
+    </main>
+    <script src="../js/main.js"></script>
+</body>
+</html>
