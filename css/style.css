@@ -471,7 +471,7 @@ PAGE components
   transition: 0.5s;
   width: 100%;
   height: 270px;
-  background-color: rgb(34, 255, 89);
+  background-color: var(--first-color);
   border-radius: 10px;
   margin: 10px 0px;
 }
@@ -494,7 +494,7 @@ PAGE components
   font-size: var(--small-font-size);
 }
 .view-product {
-  background-color: var(--first-color);
+  background-color: var(--first-color-alt);
   height: 40px;
   padding: 7px;
   margin-top: 20px;
@@ -507,7 +507,7 @@ PAGE components
   color: white;
 }
 .view-product:hover {
-  background-color: var(--first-color-alt);
+  background-color: rgba(82, 181, 107, 0.713);
 }
 
 /*
