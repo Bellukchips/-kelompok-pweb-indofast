@@ -474,12 +474,13 @@ PAGE components
   background-color: var(--first-color);
   border-radius: 10px;
   margin: 10px 0px;
+  padding-bottom: 20px;
 }
 
 .img-product img {
   background-size: auto;
   border-radius: 10px;
-  height: 200px;
+  height: 250px;
   width: 100%;
  
 }
@@ -508,6 +509,18 @@ PAGE components
 }
 .view-product:hover {
   background-color: rgba(82, 181, 107, 0.713);
+}
+
+.detail-product{
+  padding-left: 2rem;
+  padding-top: 2rem;
+  padding-right: 2rem;
+}
+.detail-product ul{
+  display:flex;;
+}
+.detail-product ul li{
+  margin-left: 5px;
 }
 
 /*
