@@ -259,6 +259,7 @@ ICON
 .nav-cart {
     font-size: 1.5rem;
     margin-right: var(--mb-2);
+    color: black;
     cursor: pointer;
 }
 
@@ -792,17 +793,16 @@ hr {
 }
 
 .btn-plus {
-    margin-left: 10px;
     outline-width: 0;
-    width: 30px;
-    height: 30px;
     border: none;
-    cursor: pointer;
-    padding: 10px;
+    padding: 5px 10px;
     border-radius: 5px;
     text-align: center;
     display: inline-block;
     color: white;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
     background: var(--first-color);
 }
 
@@ -820,21 +820,8 @@ hr {
 }
 
 .image img {
-    width: 50%;
+    width: 60%;
     border-radius: 10px;
-}
-
-.image,
-.quantity,
-.description {
-    width: 100%;
-    text-align: center;
-    margin: 6px 0;
-}
-
-.quantity {
-    padding-top: 20px;
-    margin-right: 60px;
 }
 
 .image,
@@ -1026,6 +1013,9 @@ CARD PRODUCT PAGE INDEX AND DETAIL
 .title-page {
     text-align: center;
 }
+
+
+/*END CARD*/
 
 
 /*
@@ -1283,8 +1273,8 @@ Media Query Responsive
         padding: 2rem 0;
     }
     .image img {
-        width: 50%;
-        height: 80px;
+        width: 70%;
+        height: 90px;
         border-radius: 5px
     }
     .shopping-cart {
@@ -1352,10 +1342,6 @@ Media Query Responsive
         height: 120px;
         box-shadow: none;
         display: flex;
-    }
-    .bottomMenu p {
-        margin-left: 200px;
-        font-size: 15px;
     }
     .title {
         height: 60px;
@@ -1458,8 +1444,12 @@ Media Query Responsive
         width: 90%;
     }
     .list-product {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+    .bottomMenu p {
+        margin-left: 200px;
+        font-size: 15px;
     }
 }
 
