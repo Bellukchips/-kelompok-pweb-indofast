@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,10 @@
     <link rel="stylesheet" href="../css/style.css">
     <title>IndoFast | Men's Clothes</title>
 </head>
+
 <body>
-     <!--SEARCH OVERLAY-->
-     <div id="myOverlay" class="overlay">
+    <!--SEARCH OVERLAY-->
+    <div id="myOverlay" class="overlay">
         <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
         <div class="overlay-content">
             <form action="" name="formSearch" onsubmit="return search()" method="post">
@@ -83,7 +85,7 @@
                         <a href="register.html" class="nav-link">Register</a>
                     </div>
                 </i>
-                <i class='bx bxs-cart nav-cart'></i>
+                <a class='bx bxs-cart nav-cart' href='cart/cart_flash-sale1.html'></a>
                 <i class='bx bx-search nav-search' onclick="openSearch()"></i>
                 <i class='bx bx-menu nav-toggle' id="toggle"></i>
 
@@ -92,196 +94,220 @@
     </header>
     <main class="l-main">
 
-           <section class="title-section section">
+        <section class="title-section section">
             <a href="#men-clothes">Collection Men's Clothes</a>
-           </section>
-           
-           <!--PRODUCT SALE-->
-           <section id="men-clothes" class="section-product">
-               <div class="sidebar">
+        </section>
+
+        <!--PRODUCT SALE-->
+        <section id="men-clothes" class="section-product">
+            <div class="sidebar">
                 <div class="sidebar-item">
                     <h3>Filter Price</h3>
                     <form method="POST">
                         <input type="number" placeholder="Filter Price ex:12000" name="filterPrice" class="filter-price">
                     </form>
                 </div>
-               </div>
-               <div class="content-product">
+            </div>
+            <div class="content-product">
 
-                    <div class="header-content-product">
-                        <h1>Men's Clothes</h1>
-                        <select name="sortBy" id="" class="custom-select">
+                <div class="header-content-product">
+                    <h1>Men's Clothes</h1>
+                    <select name="sortBy" id="" class="custom-select">
                             <option value="0">Sort By</option>
                             <option value="name">Name A - Z</option>
                             <option value="bestSell">Best Selling</option>
                             <option value="LtoH">Price Low to High</option>
                             <option value="HtoL">Price High to Low</option>
                         </select>
+                </div>
+
+                <div class="list-product">
+                    <!--PRODUCT SALE CARD-->
+                    <div class="card-product">
+                        <div class="img-product">
+                            <img src="https://images.unsplash.com/photo-1497339100210-9e87df79c218?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80" alt="">
+                        </div>
+                        <div class="product-data">
+                            <div class="title-product">
+                                <h1>Suit Blazer Man</h1>
+                            </div>
+                            <div class="product-price">Rp.35.400.000</div>
+                            <div class="view-product">
+                                <a href="">View Detail</a>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="list-product">
-                        <!--PRODUCT SALE CARD-->
-                            <div class="card-product">
-                                <div class="img-product">
-                                    <img src="https://images.unsplash.com/photo-1497339100210-9e87df79c218?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80" alt="">
-                                </div>
-                                <div class="product-data">
-                                    <div class="title-product"><h1>Suit Blazer Man</h1></div>
-                                    <div class="product-price">Rp.35.400.000</div>
-                                    <div class="view-product">
-                                        <a href="">View Detail</a>
-                                    </div>
-                                </div>
-                            </div> 
-
-                            <div class="card-product">
-                                <div class="img-product">
-                                    <img src="https://images.unsplash.com/flagged/photo-1564468781192-f023d514222d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE4fHx8ZW58MHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
-                                </div>
-                                <div class="product-data">
-                                    <div class="title-product"><h1>Gingham Shirt </h1></div>
-                                    <div class="product-price">Rp.200.000</div>
-                                    <div class="view-product">
-                                        <a href="">View Detail</a>
-                                    </div>
-                                </div>
-                            </div> 
-
-                            <div class="card-product">
-                                <div class="img-product">
-                                    <img src="https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=749&q=80" alt="">
-                                </div>
-                                <div class="product-data">
-                                    <div class="title-product"><h1>(Hotel) White </h1></div>
-                                    <div class="product-price">Rp.920.000</div>
-                                    <div class="view-product">
-                                        <a href="">View Detail</a>
-                                    </div>
-                                </div>
-                            </div> 
-
-                            <div class="card-product">
-                                <div class="img-product">
-                                    <img src="https://images.unsplash.com/photo-1598032895397-b9472444bf93?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=500&q=80" alt="">
-                                </div>
-                                <div class="product-data">
-                                    <div class="title-product"><h1>Shirt Work</h1></div>
-                                    <div class="product-price">Rp.1.000.000</div>
-                                    <div class="view-product">
-                                        <a href="">View Detail</a>
-                                    </div>
-                                </div>
-                            </div> 
-
-                            <div class="card-product">
-                                <div class="img-product">
-                                    <img src="https://images.unsplash.com/photo-1577212017184-80cc0da11082?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=334&q=80" alt="">
-                                </div>
-                                <div class="product-data">
-                                    <div class="title-product"><h1>Arsenal Jersey 2019</h1></div>
-                                    <div class="product-price">Rp.1.800.000</div>
-                                    <div class="view-product">
-                                        <a href="">View Detail</a>
-                                    </div>
-                                </div>
-                            </div> 
-
-                            <div class="card-product">
-                                <div class="img-product">
-                                    <img src="https://images.unsplash.com/photo-1543076447-215ad9ba6923?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80" alt="">
-                                </div>
-                                <div class="product-data">
-                                    <div class="title-product"><h1>Jeans Jacket</h1></div>
-                                    <div class="product-price">Rp.450.000</div>
-                                    <div class="view-product">
-                                        <a href="">View Detail</a>
-                                    </div>
-                                </div>
-                            </div> 
-
-                            <div class="card-product">
-                                <div class="img-product">
-                                    <img src="https://images.unsplash.com/photo-1561365452-adb940139ffa?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=738&q=80" alt="">
-                                </div>
-                                <div class="product-data">
-                                    <div class="title-product"><h1>Sweeter Man</h1></div>
-                                    <div class="product-price">Rp.800.000</div>
-                                    <div class="view-product">
-                                        <a href="">View Detail</a>
-                                    </div>
-                                </div>
+                    <div class="card-product">
+                        <div class="img-product">
+                            <img src="https://images.unsplash.com/flagged/photo-1564468781192-f023d514222d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE4fHx8ZW58MHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                        </div>
+                        <div class="product-data">
+                            <div class="title-product">
+                                <h1>Gingham Shirt </h1>
                             </div>
-
-                            <div class="card-product">
-                                <div class="img-product">
-                                    <img src="https://images.unsplash.com/photo-1571455786673-9d9d6c194f90?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80" alt="">
-                                </div>
-                                <div class="product-data">
-                                    <div class="title-product"><h1>Tshirt Black</h1></div>
-                                    <div class="product-price">Rp.150.000</div>
-                                    <div class="view-product">
-                                        <a href="">View Detail</a>
-                                    </div>
-                                </div>
+                            <div class="product-price">Rp.200.000</div>
+                            <div class="view-product">
+                                <a href="">View Detail</a>
                             </div>
-
-                            <div class="card-product">
-                                <div class="img-product">
-                                    <img src="https://images.unsplash.com/photo-1579269896398-4deb6cbdc320?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80" alt="">
-                                </div>
-                                <div class="product-data">
-                                    <div class="title-product"><h1>Jacket Orange</h1></div>
-                                    <div class="product-price">Rp.700.000</div>
-                                    <div class="view-product">
-                                        <a href="">View Detail</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card-product">
-                                <div class="img-product">
-                                    <img src="https://images.unsplash.com/photo-1558014356-f7c41bc744f7?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80g" alt="">
-                                </div>
-                                <div class="product-data">
-                                    <div class="title-product"><h1>PABLO 3LINE </h1></div>
-                                    <div class="product-price">Rp.2.000.000</div>
-                                    <div class="view-product">
-                                        <a href="">View Detail</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card-product">
-                                <div class="img-product">
-                                    <img src="https://images.unsplash.com/photo-1483656166969-b06816dfb1a0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="">
-                                </div>
-                                <div class="product-data">
-                                    <div class="title-product"><h1>Suit Blazer Sweet</h1></div>
-                                    <div class="product-price">Rp.1.650.000</div>
-                                    <div class="view-product">
-                                        <a href="">View Detail</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card-product">
-                                <div class="img-product">
-                                    <img src="https://images.unsplash.com/photo-1600379569881-850229c45dbb?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="">
-                                </div>
-                                <div class="product-data">
-                                    <div class="title-product"><h1>Suit Blazer Bowties </h1></div>
-                                    <div class="product-price">Rp.15.000.000</div>
-                                    <div class="view-product">
-                                        <a href="">View Detail</a>
-                                    </div>
-                                </div>
-                            </div>
+                        </div>
                     </div>
-               </div>
-           </section>
+
+                    <div class="card-product">
+                        <div class="img-product">
+                            <img src="https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=749&q=80" alt="">
+                        </div>
+                        <div class="product-data">
+                            <div class="title-product">
+                                <h1>(Hotel) White </h1>
+                            </div>
+                            <div class="product-price">Rp.920.000</div>
+                            <div class="view-product">
+                                <a href="">View Detail</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-product">
+                        <div class="img-product">
+                            <img src="https://images.unsplash.com/photo-1598032895397-b9472444bf93?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=500&q=80" alt="">
+                        </div>
+                        <div class="product-data">
+                            <div class="title-product">
+                                <h1>Shirt Work</h1>
+                            </div>
+                            <div class="product-price">Rp.1.000.000</div>
+                            <div class="view-product">
+                                <a href="">View Detail</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-product">
+                        <div class="img-product">
+                            <img src="https://images.unsplash.com/photo-1577212017184-80cc0da11082?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=334&q=80" alt="">
+                        </div>
+                        <div class="product-data">
+                            <div class="title-product">
+                                <h1>Arsenal Jersey 2019</h1>
+                            </div>
+                            <div class="product-price">Rp.1.800.000</div>
+                            <div class="view-product">
+                                <a href="">View Detail</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-product">
+                        <div class="img-product">
+                            <img src="https://images.unsplash.com/photo-1543076447-215ad9ba6923?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80" alt="">
+                        </div>
+                        <div class="product-data">
+                            <div class="title-product">
+                                <h1>Jeans Jacket</h1>
+                            </div>
+                            <div class="product-price">Rp.450.000</div>
+                            <div class="view-product">
+                                <a href="">View Detail</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-product">
+                        <div class="img-product">
+                            <img src="https://images.unsplash.com/photo-1561365452-adb940139ffa?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=738&q=80" alt="">
+                        </div>
+                        <div class="product-data">
+                            <div class="title-product">
+                                <h1>Sweeter Man</h1>
+                            </div>
+                            <div class="product-price">Rp.800.000</div>
+                            <div class="view-product">
+                                <a href="">View Detail</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-product">
+                        <div class="img-product">
+                            <img src="https://images.unsplash.com/photo-1571455786673-9d9d6c194f90?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80" alt="">
+                        </div>
+                        <div class="product-data">
+                            <div class="title-product">
+                                <h1>Tshirt Black</h1>
+                            </div>
+                            <div class="product-price">Rp.150.000</div>
+                            <div class="view-product">
+                                <a href="">View Detail</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-product">
+                        <div class="img-product">
+                            <img src="https://images.unsplash.com/photo-1579269896398-4deb6cbdc320?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80" alt="">
+                        </div>
+                        <div class="product-data">
+                            <div class="title-product">
+                                <h1>Jacket Orange</h1>
+                            </div>
+                            <div class="product-price">Rp.700.000</div>
+                            <div class="view-product">
+                                <a href="">View Detail</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-product">
+                        <div class="img-product">
+                            <img src="https://images.unsplash.com/photo-1558014356-f7c41bc744f7?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80g" alt="">
+                        </div>
+                        <div class="product-data">
+                            <div class="title-product">
+                                <h1>PABLO 3LINE </h1>
+                            </div>
+                            <div class="product-price">Rp.2.000.000</div>
+                            <div class="view-product">
+                                <a href="">View Detail</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-product">
+                        <div class="img-product">
+                            <img src="https://images.unsplash.com/photo-1483656166969-b06816dfb1a0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="">
+                        </div>
+                        <div class="product-data">
+                            <div class="title-product">
+                                <h1>Suit Blazer Sweet</h1>
+                            </div>
+                            <div class="product-price">Rp.1.650.000</div>
+                            <div class="view-product">
+                                <a href="">View Detail</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-product">
+                        <div class="img-product">
+                            <img src="https://images.unsplash.com/photo-1600379569881-850229c45dbb?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="">
+                        </div>
+                        <div class="product-data">
+                            <div class="title-product">
+                                <h1>Suit Blazer Bowties </h1>
+                            </div>
+                            <div class="product-price">Rp.15.000.000</div>
+                            <div class="view-product">
+                                <a href="">View Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-     <!--FOOTER-->
-     <footer>
+    <!--FOOTER-->
+    <footer>
         <br>
         <center>
             <p>Copyright &copy; Kelompok 18</p>
@@ -289,4 +315,5 @@
     </footer>
     <script src="../js/main.js"></script>
 </body>
+
 </html>

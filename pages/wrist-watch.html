@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,10 @@
     <link rel="stylesheet" href="../css/style.css">
     <title>IndoFast | Wrist Watch</title>
 </head>
+
 <body>
-     <!--SEARCH OVERLAY-->
-     <div id="myOverlay" class="overlay">
+    <!--SEARCH OVERLAY-->
+    <div id="myOverlay" class="overlay">
         <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
         <div class="overlay-content">
             <form action="" name="formSearch" onsubmit="return search()" method="post">
@@ -83,7 +85,7 @@
                         <a href="register.html" class="nav-link">Register</a>
                     </div>
                 </i>
-                <i class='bx bxs-cart nav-cart'></i>
+                <a class='bx bxs-cart nav-cart' href='cart/cart_flash-sale1.html'></a>
                 <i class='bx bx-search nav-search' onclick="openSearch()"></i>
                 <i class='bx bx-menu nav-toggle' id="toggle"></i>
 
@@ -92,196 +94,220 @@
     </header>
     <main class="l-main">
 
-           <section class="title-section section">
+        <section class="title-section section">
             <a href="#ww">Collection Wrist Watch</a>
-           </section>
-           
-           <!--PRODUCT SALE-->
-           <section id="ww" class="section-product">
-               <div class="sidebar">
+        </section>
+
+        <!--PRODUCT SALE-->
+        <section id="ww" class="section-product">
+            <div class="sidebar">
                 <div class="sidebar-item">
                     <h3>Filter Price</h3>
                     <form method="POST">
                         <input type="number" placeholder="Filter Price ex:12000" name="filterPrice" class="filter-price">
                     </form>
                 </div>
-               </div>
-               <div class="content-product">
+            </div>
+            <div class="content-product">
 
-                    <div class="header-content-product">
-                        <h1>Wrist Watch</h1>
-                        <select name="sortBy" id="" class="custom-select">
+                <div class="header-content-product">
+                    <h1>Wrist Watch</h1>
+                    <select name="sortBy" id="" class="custom-select">
                             <option value="0">Sort By</option>
                             <option value="name">Name A - Z</option>
                             <option value="bestSell">Best Selling</option>
                             <option value="LtoH">Price Low to High</option>
                             <option value="HtoL">Price High to Low</option>
                         </select>
+                </div>
+
+                <div class="list-product">
+                    <!--PRODUCT SALE CARD-->
+                    <div class="card-product">
+                        <div class="img-product">
+                            <img src="https://images.unsplash.com/photo-1551293993-ddbf84cb6f01?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8d3Jpc3R3YXRjaHxlbnwwfDB8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+                        </div>
+                        <div class="product-data">
+                            <div class="title-product">
+                                <h1>Fossil Grant</h1>
+                            </div>
+                            <div class="product-price">Rp.85.000.000</div>
+                            <div class="view-product">
+                                <a href="">View Detail</a>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="list-product">
-                        <!--PRODUCT SALE CARD-->
-                            <div class="card-product">
-                                <div class="img-product">
-                                    <img src="https://images.unsplash.com/photo-1551293993-ddbf84cb6f01?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8d3Jpc3R3YXRjaHxlbnwwfDB8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
-                                </div>
-                                <div class="product-data">
-                                    <div class="title-product"><h1>Fossil Grant</h1></div>
-                                    <div class="product-price">Rp.85.000.000</div>
-                                    <div class="view-product">
-                                        <a href="">View Detail</a>
-                                    </div>
-                                </div>
-                            </div> 
-
-                            <div class="card-product">
-                                <div class="img-product">
-                                    <img src="https://images.unsplash.com/photo-1474673690790-d3cf9bfab015?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8&auto=format&fit=crop&w=500&q=60" alt="">
-                                </div>
-                                <div class="product-data">
-                                    <div class="title-product"><h1>Casio Gold Gjaii</h1></div>
-                                    <div class="product-price">Rp.15.000.000</div>
-                                    <div class="view-product">
-                                        <a href="">View Detail</a>
-                                    </div>
-                                </div>
-                            </div> 
-
-                            <div class="card-product">
-                                <div class="img-product">
-                                    <img src="https://images.unsplash.com/photo-1541778480-fc1752bbc2a9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=859&q=80" alt="">
-                                </div>
-                                <div class="product-data">
-                                    <div class="title-product"><h1>Casio Gold G677</h1></div>
-                                    <div class="product-price">Rp.9.473.000</div>
-                                    <div class="view-product">
-                                        <a href="">View Detail</a>
-                                    </div>
-                                </div>
-                            </div> 
-
-                            <div class="card-product">
-                                <div class="img-product">
-                                    <img src="https://images.unsplash.com/photo-1434056886845-dac89ffe9b56?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80" alt="">
-                                </div>
-                                <div class="product-data">
-                                    <div class="title-product"><h1>Brava Black</h1></div>
-                                    <div class="product-price">Rp.2.000.000</div>
-                                    <div class="view-product">
-                                        <a href="">View Detail</a>
-                                    </div>
-                                </div>
-                            </div> 
-
-                            <div class="card-product">
-                                <div class="img-product">
-                                    <img src="https://images.unsplash.com/photo-1508057198894-247b23fe5ade?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80" alt="">
-                                </div>
-                                <div class="product-data">
-                                    <div class="title-product"><h1>Hunter Race Black Gold</h1></div>
-                                    <div class="product-price">Rp.8.000.000</div>
-                                    <div class="view-product">
-                                        <a href="">View Detail</a>
-                                    </div>
-                                </div>
-                            </div> 
-
-                            <div class="card-product">
-                                <div class="img-product">
-                                    <img src="https://images.unsplash.com/photo-1571947189938-407e0903cd61?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=749&q=80" alt="">
-                                </div>
-                                <div class="product-data">
-                                    <div class="title-product"><h1>Seiko Oricas</h1></div>
-                                    <div class="product-price">Rp.9.000.000</div>
-                                    <div class="view-product">
-                                        <a href="">View Detail</a>
-                                    </div>
-                                </div>
-                            </div> 
-
-                            <div class="card-product">
-                                <div class="img-product">
-                                    <img src="https://images.unsplash.com/photo-1589391943533-d6856910b7a8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=625&q=80" alt="">
-                                </div>
-                                <div class="product-data">
-                                    <div class="title-product"><h1>Nike Air Jordan Blue</h1></div>
-                                    <div class="product-price">Rp.15.000.000</div>
-                                    <div class="view-product">
-                                        <a href="">View Detail</a>
-                                    </div>
-                                </div>
+                    <div class="card-product">
+                        <div class="img-product">
+                            <img src="https://images.unsplash.com/photo-1474673690790-d3cf9bfab015?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8&auto=format&fit=crop&w=500&q=60" alt="">
+                        </div>
+                        <div class="product-data">
+                            <div class="title-product">
+                                <h1>Casio Gold Gjaii</h1>
                             </div>
-
-                            <div class="card-product">
-                                <div class="img-product">
-                                    <img src="https://images.unsplash.com/photo-1605548230903-a22352b062b4?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mjd8fHdyaXN0d2F0Y2h8ZW58MHwwfDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
-                                </div>
-                                <div class="product-data">
-                                    <div class="title-product"><h1>Gshock Army</h1></div>
-                                    <div class="product-price">Rp.8.900.000</div>
-                                    <div class="view-product">
-                                        <a href="">View Detail</a>
-                                    </div>
-                                </div>
+                            <div class="product-price">Rp.15.000.000</div>
+                            <div class="view-product">
+                                <a href="">View Detail</a>
                             </div>
-
-                            <div class="card-product">
-                                <div class="img-product">
-                                    <img src="https://images.unsplash.com/photo-1596516109370-29001ec8ec36?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="">
-                                </div>
-                                <div class="product-data">
-                                    <div class="title-product"><h1>Seiko Diver 200m Mettalic</h1></div>
-                                    <div class="product-price">Rp.75.000.000</div>
-                                    <div class="view-product">
-                                        <a href="">View Detail</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card-product">
-                                <div class="img-product">
-                                    <img src="https://images.unsplash.com/photo-1512034705137-dc51c5ed36f4?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=742&q=80" alt="">
-                                </div>
-                                <div class="product-data">
-                                    <div class="title-product"><h1>Seiko Diver 200m</h1></div>
-                                    <div class="product-price">Rp.73.000.000</div>
-                                    <div class="view-product">
-                                        <a href="">View Detail</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card-product">
-                                <div class="img-product">
-                                    <img src="https://images.unsplash.com/photo-1512473711131-11ec8c3e9665?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80" alt="">
-                                </div>
-                                <div class="product-data">
-                                    <div class="title-product"><h1>Hamilton d739</h1></div>
-                                    <div class="product-price">Rp.1.900.000</div>
-                                    <div class="view-product">
-                                        <a href="">View Detail</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card-product">
-                                <div class="img-product">
-                                    <img src="https://images.unsplash.com/photo-1543956872-37cfc5474a71?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="">
-                                </div>
-                                <div class="product-data">
-                                    <div class="title-product"><h1>Gshock WR20BAR Black</h1></div>
-                                    <div class="product-price">Rp.5.080.000</div>
-                                    <div class="view-product">
-                                        <a href="">View Detail</a>
-                                    </div>
-                                </div>
-                            </div>
+                        </div>
                     </div>
-               </div>
-           </section>
+
+                    <div class="card-product">
+                        <div class="img-product">
+                            <img src="https://images.unsplash.com/photo-1541778480-fc1752bbc2a9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=859&q=80" alt="">
+                        </div>
+                        <div class="product-data">
+                            <div class="title-product">
+                                <h1>Casio Gold G677</h1>
+                            </div>
+                            <div class="product-price">Rp.9.473.000</div>
+                            <div class="view-product">
+                                <a href="">View Detail</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-product">
+                        <div class="img-product">
+                            <img src="https://images.unsplash.com/photo-1434056886845-dac89ffe9b56?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80" alt="">
+                        </div>
+                        <div class="product-data">
+                            <div class="title-product">
+                                <h1>Brava Black</h1>
+                            </div>
+                            <div class="product-price">Rp.2.000.000</div>
+                            <div class="view-product">
+                                <a href="">View Detail</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-product">
+                        <div class="img-product">
+                            <img src="https://images.unsplash.com/photo-1508057198894-247b23fe5ade?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80" alt="">
+                        </div>
+                        <div class="product-data">
+                            <div class="title-product">
+                                <h1>Hunter Race Black Gold</h1>
+                            </div>
+                            <div class="product-price">Rp.8.000.000</div>
+                            <div class="view-product">
+                                <a href="">View Detail</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-product">
+                        <div class="img-product">
+                            <img src="https://images.unsplash.com/photo-1571947189938-407e0903cd61?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=749&q=80" alt="">
+                        </div>
+                        <div class="product-data">
+                            <div class="title-product">
+                                <h1>Seiko Oricas</h1>
+                            </div>
+                            <div class="product-price">Rp.9.000.000</div>
+                            <div class="view-product">
+                                <a href="">View Detail</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-product">
+                        <div class="img-product">
+                            <img src="https://images.unsplash.com/photo-1589391943533-d6856910b7a8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=625&q=80" alt="">
+                        </div>
+                        <div class="product-data">
+                            <div class="title-product">
+                                <h1>Nike Air Jordan Blue</h1>
+                            </div>
+                            <div class="product-price">Rp.15.000.000</div>
+                            <div class="view-product">
+                                <a href="">View Detail</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-product">
+                        <div class="img-product">
+                            <img src="https://images.unsplash.com/photo-1605548230903-a22352b062b4?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mjd8fHdyaXN0d2F0Y2h8ZW58MHwwfDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+                        </div>
+                        <div class="product-data">
+                            <div class="title-product">
+                                <h1>Gshock Army</h1>
+                            </div>
+                            <div class="product-price">Rp.8.900.000</div>
+                            <div class="view-product">
+                                <a href="">View Detail</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-product">
+                        <div class="img-product">
+                            <img src="https://images.unsplash.com/photo-1596516109370-29001ec8ec36?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="">
+                        </div>
+                        <div class="product-data">
+                            <div class="title-product">
+                                <h1>Seiko Diver 200m Mettalic</h1>
+                            </div>
+                            <div class="product-price">Rp.75.000.000</div>
+                            <div class="view-product">
+                                <a href="">View Detail</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-product">
+                        <div class="img-product">
+                            <img src="https://images.unsplash.com/photo-1512034705137-dc51c5ed36f4?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=742&q=80" alt="">
+                        </div>
+                        <div class="product-data">
+                            <div class="title-product">
+                                <h1>Seiko Diver 200m</h1>
+                            </div>
+                            <div class="product-price">Rp.73.000.000</div>
+                            <div class="view-product">
+                                <a href="">View Detail</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-product">
+                        <div class="img-product">
+                            <img src="https://images.unsplash.com/photo-1512473711131-11ec8c3e9665?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80" alt="">
+                        </div>
+                        <div class="product-data">
+                            <div class="title-product">
+                                <h1>Hamilton d739</h1>
+                            </div>
+                            <div class="product-price">Rp.1.900.000</div>
+                            <div class="view-product">
+                                <a href="">View Detail</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-product">
+                        <div class="img-product">
+                            <img src="https://images.unsplash.com/photo-1543956872-37cfc5474a71?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="">
+                        </div>
+                        <div class="product-data">
+                            <div class="title-product">
+                                <h1>Gshock WR20BAR Black</h1>
+                            </div>
+                            <div class="product-price">Rp.5.080.000</div>
+                            <div class="view-product">
+                                <a href="">View Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-     <!--FOOTER-->
-     <footer>
+    <!--FOOTER-->
+    <footer>
         <br>
         <center>
             <p>Copyright &copy; Kelompok 18</p>
@@ -289,4 +315,5 @@
     </footer>
     <script src="../js/main.js"></script>
 </body>
+
 </html>
