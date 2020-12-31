@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="css/style.css">
-    <title>Indo Fashion Store</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>Detail Page</title>
 </head>
 
 <body>
@@ -24,13 +24,13 @@
         <!--MENU DROPDOWN-->
         <nav class="nav grid">
             <div>
-                <a href="index.html" class="logo">IndoFast</a>
+                <a href="../../index.html" class="logo">IndoFast</a>
             </div>
             <div class="nav-menu" id="navmenu">
                 <div class="nav-list">
 
                     <div class="nav-item">
-                        <a href="pages/accesories.html" class="nav-link">Accessories</a>
+                        <a href="../accesories.html" class="nav-link">Accessories</a>
                     </div>
                     <div class="nav-item">
                         <a class="nav-dropdown">
@@ -38,8 +38,8 @@
                             <i class='bx bx-caret-down'></i>
                         </a>
                         <div class="item-child">
-                            <a href="pages/shoes-men.html" class="nav-link">Men</a>
-                            <a href="pages/women-shoes.html" class="nav-link">Women</a>
+                            <a href="../shoes-men.html" class="nav-link">Men</a>
+                            <a href="../women-shoes.html" class="nav-link">Women</a>
                         </div>
                     </div>
                     <div class="nav-item">
@@ -48,8 +48,8 @@
                             <i class='bx bx-caret-down'></i>
                         </a>
                         <div class="item-child">
-                            <a href="pages/men-clothes.html" class="nav-link">Men</a>
-                            <a href="pages/women-clothes.html" class="nav-link">Women</a>
+                            <a href="../men-clothes.html" class="nav-link">Men</a>
+                            <a href="../women-clothes.html" class="nav-link">Women</a>
                         </div>
                     </div>
                     <div class="nav-item">
@@ -58,12 +58,12 @@
                             <i class='bx bx-caret-down'></i>
                         </a>
                         <div class="item-child">
-                            <a href="pages/men-bag.html" class="nav-link">Men</a>
-                            <a href="pages/women-bag.html" class="nav-link">Women</a>
+                            <a href="../men-bag.html" class="nav-link">Men</a>
+                            <a href="../women-bag.html" class="nav-link">Women</a>
                         </div>
                     </div>
                     <div class="nav-item">
-                        <a href="pages/wrist-watch.html" class="nav-link">Wrist Watch</a>
+                        <a href="../wrist-watch.html" class="nav-link">Wrist Watch</a>
                     </div>
                     <div class="nav-item" id="nav-item-user">
                         <a class="nav-dropdown">
@@ -71,21 +71,21 @@
                             <i class='bx bx-caret-down'></i>
                         </a>
                         <div class="item-child">
-                            <a href="pages/login.html" class="nav-link">Login</a>
-                            <a href="pages/register.html" class="nav-link">Register</a>
+                            <a href="login.html" class="nav-link">Login</a>
+                            <a href="register.html" class="nav-link">Register</a>
                         </div>
                     </div>
                 </div>
             </div>
-            </div>
+
             <div>
                 <i class='bx bxs-user nav-user'>
                     <div class="item-child">
-                        <a href="pages/login.html" class="nav-link">Login</a>
-                        <a href="pages/register.html" class="nav-link">Register</a>
+                        <a href="../login.html" class="nav-link">Login</a>
+                        <a href="../register.html" class="nav-link">Register</a>
                     </div>
                 </i>
-                <a class='bx bxs-cart nav-cart' href='pages/cart/cart_flash-sale1.html'></a>
+                <a class='bx bxs-cart nav-cart' href='../cart/cart_flash-sale1.html'></a>
                 <i class='bx bx-search nav-search' onclick="openSearch()"></i>
                 <i class='bx bx-menu nav-toggle' id="toggle"></i>
 
@@ -93,52 +93,37 @@
         </nav>
     </header>
     <main class="l-main">
-        <!--Menu Home-->
-        <section class="home" id="home">
-            <div class="slideshow-container">
-                <div class="container-home">
-                    <div class="home-content">
-                        <h1 class="home-title">FLASH SALE<br><span>DISCOUNT UP TO 35%</span></h1>
-
-                        <img src="src/imani-bahati-LxVxPA1LOVM-unsplash.png" alt="" class="home-img">
-                    </div>
-                    <a href="pages/detailPage/detail_page_flash-sale1.html" class="button">BUY NOW</a>
+        <section class="detail">
+            <div class="product-detail">
+                <div class="img-detail">
+                    <img src="https://images.unsplash.com/photo-1521369909029-2afed882baee?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8aGF0fGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
                 </div>
-                <div class="container-home">
-                    <div class="home-content">
-                        <h1 class="home-title">FLASH SALE<br><span>DISCOUNT UP TO 25%</span></h1>
-
-                        <img src="src/ns7661_black__tas_ranseltas_punggung__tas_fashion_import__tas_wanita_murahrp_133000_1474603852_e59e9689.png" alt="" class="home-img">
+                <div class="data-product">
+                    <h1>Stussy Hat Brown</h1>
+                    <div class="price-product">Rp.2.999.500</div>
+                    <div class="stock">Stock : 100 | Sisa : 70</div>
+                    <br>
+                    <hr>
+                    <div class="size-product">
+                        <div class="btn-shop">
+                            <a href="../cart/cart_flash-sale1.html" class="btn-to-cart"><i class='bx bxs-cart-add icon-add-cart'></i> Add To Cart</a>
+                            <a href="../checkout/checkout.html" class="btn-to-buy">Buy Now</a>
+                        </div>
                     </div>
-                    <a href="pages/detailPage/detail_page_flash-sale3.html" class="button">BUY NOW</a>
-                </div>
-                <div class="container-home">
-                    <div class="home-content">
-                        <h1 class="home-title">FLASH SALE<br><span>DISCOUNT UP TO 30%</span></h1>
-
-                        <img src="src/mathias-lovstrom-GurvlIZV3Ic-unsplash.png" alt="" class="home-img">
+                    <div class="desc-product">
+                        <h4>Description</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                            specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                            passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                     </div>
-                    <a href="pages/detailPage/detail_page_flash-sale2.html" class="button">BUY NOW</a>
-                </div>
-                <div class="container-home">
-                    <div class="home-content">
-                        <h1 class="home-title">FLASH SALE<br><span>DISCOUNT UP TO 20%</span></h1>
+                    <br>
+                    <hr>
 
-                        <img src="src/photo-1579721840641-7d0e67f1204e.png" alt="" class="home-img">
-                    </div>
-                    <a href="pages/detailPage/detail_page_flash-sale4.html" class="button">BUY NOW</a>
                 </div>
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
             </div>
-        </section>
 
-        <!--PRODUCT SALE-->
-        <section class="product-sale section">
-            <div class="title-page">
-                <h1>DISCOUNT FLASH SALE 12.12</h1>
-            </div>
+            <div class="recomended-title">Product Recomended</div>
             <ul class="cards">
 
                 <li class="cards_item">
@@ -147,7 +132,7 @@
                         <div class="card_content">
                             <h2 class="card_title">Nike Air Max </h2>
                             <p class="card_text"><span style="text-decoration: line-through white;">Rp.1.500.000</span> Rp.256.000</p>
-                            <a class="btn card_btn" href="pages/cart/cart_flash-sale1.html">Add To Cart <i class='bx bxs-cart-add icon-add-cart'></i></a>
+                            <button class="btn card_btn">Add To Cart <i class='bx bxs-cart-add icon-add-cart'></i></button>
                         </div>
                     </div>
                 </li>
@@ -158,7 +143,7 @@
                         <div class="card_content">
                             <h2 class="card_title">Tas Wanita</h2>
                             <p class="card_text"><span style="text-decoration: line-through white;">Rp.2.000.000</span> Rp.950.000</p>
-                            <a class="btn card_btn" href="pages/cart/cart_flash-sale1.html">Add To Cart <i class='bx bxs-cart-add icon-add-cart'></i></a>
+                            <button class="btn card_btn">Add To Cart <i class='bx bxs-cart-add icon-add-cart'></i></button>
                         </div>
                     </div>
                 </li>
@@ -169,7 +154,7 @@
                         <div class="card_content">
                             <h2 class="card_title">Apple Watch Series 5</h2>
                             <p class="card_text"><span style="text-decoration: line-through white;">Rp7.699.000</span> Rp.5.550.000</p>
-                            <a class="btn card_btn" href="pages/cart/cart_flash-sale1.html">Add To Cart <i class='bx bxs-cart-add icon-add-cart'></i></a>
+                            <button class="btn card_btn">Add To Cart <i class='bx bxs-cart-add icon-add-cart'></i></button>
                         </div>
                     </div>
                 </li>
@@ -180,7 +165,7 @@
                         <div class="card_content">
                             <h2 class="card_title">Air Jordan High Grey</h2>
                             <p class="card_text"><span style="text-decoration: line-through white;">Rp10.200.000</span> Rp.1.935.149</p>
-                            <a class="btn card_btn" href="pages/cart/cart_flash-sale1.html">Add To Cart <i class='bx bxs-cart-add icon-add-cart'></i></a>
+                            <button class="btn card_btn">Add To Cart <i class='bx bxs-cart-add icon-add-cart'></i></button>
                         </div>
                     </div>
                 </li>
@@ -191,17 +176,15 @@
                         <div class="card_content">
                             <h2 class="card_title">Kasual Pria Lengan Pendek</h2>
                             <p class="card_text"><span style="text-decoration: line-through white;">Rp136.399</span> Rp.99.000</p>
-                            <a class="btn card_btn" href="pages/cart/cart_flash-sale1.html">Add To Cart <i class='bx bxs-cart-add icon-add-cart'></i></a>
+                            <button class="btn card_btn">Add To Cart <i class='bx bxs-cart-add icon-add-cart'></i></button>
                         </div>
                     </div>
                 </li>
             </ul>
-            <div class="title-page">
-                <a href="#"><i class='bx bx-chevrons-down icon-down'></i></a>
-            </div>
         </section>
     </main>
 
+    <!--BOTTOM MENU-->
     <!--FOOTER-->
     <footer>
         <br>
@@ -209,7 +192,7 @@
             <p>Copyright &copy; Kelompok 18</p>
         </center>
     </footer>
-    <script src="js/main.js"></script>
+    <script src="../../js/main.js"></script>
 </body>
 
 </html>
