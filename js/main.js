@@ -15,18 +15,18 @@ showMenu('searchToggle', 'searchMenu');
 
 // remove menu responsive
 
-const navLink = document.querySelectorAll('.nav-link');
+// const navLink = document.querySelectorAll('.nav-link');
 
-function linkAction() {
-    // Active Link
-    // navLink.forEach(n => n.classList.remove('active'));
-    // this.classList.add('active');
+// function linkAction() {
+//     // Active Link
+//     // navLink.forEach(n => n.classList.remove('active'));
+//     // this.classList.add('active');
 
-    //remove menu responsive
-    const navMenu = document.getElementById('navmenu');
-    navmenu.classList.remove('show');
-}
-navLink.forEach(n => n.addEventListener('click', linkAction));
+//     //remove menu responsive
+//     const navMenu = document.getElementById('navmenu');
+//     navmenu.classList.remove('show');
+// }
+// navLink.forEach(n => n.addEventListener('click', linkAction));
 
 
 // SLIDESHOW
