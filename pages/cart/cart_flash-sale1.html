@@ -58,7 +58,7 @@
                         </button>
                     </div>
 
-                    <div class="total-price" id="total">Rp.255000</div>
+                    <div class="total-price" id="total">Rp.255.000</div>
                 </div>
             </div>
         </section>
@@ -66,7 +66,7 @@
 
     <!--BOTTOM MENU-->
     <div class="bottomMenu" id="bottomMenu">
-        <p id="totalShop">Total : Rp.255000</p>
+        <p id="totalShop">Total : Rp.255.000</p>
         <a href="../checkout/checkout.html">Checkout</a>
     </div>
     <script src="https://code.jquery.com/jquery-2.2.4.js" charset="utf-8"></script>
@@ -80,8 +80,12 @@
             if (value > 1) {
                 value = value - 1;
                 var total = 255000 * value;
-                totalprice.innerHTML = 'Rp.' + total;
-                totalShop.innerHTML = 'Total : Rp.' + total;
+                var reverse = total.toString().split('').reverse().join(''),
+                    ribuan = reverse.match(/\d{1,3}/g);
+                ribuan = ribuan.join('.').split('').reverse().join('');
+
+                totalprice.innerHTML = 'Rp.' + ribuan;
+                totalShop.innerHTML = 'Total : Rp.' + ribuan;
             } else {
                 value = 1;
             }
@@ -100,8 +104,13 @@
             if (value < 100) {
                 value = value + 1;
                 var total = 255000 * value;
-                totalprice.innerHTML = 'Rp.' + total;
-                totalShop.innerHTML = 'Total : Rp.' + total;
+                var total = 255000 * value;
+                var reverse = total.toString().split('').reverse().join(''),
+                    ribuan = reverse.match(/\d{1,3}/g);
+                ribuan = ribuan.join('.').split('').reverse().join('');
+
+                totalprice.innerHTML = 'Rp.' + ribuan;
+                totalShop.innerHTML = 'Total : Rp.' + ribuan;
             } else {
                 value = 100;
             }
